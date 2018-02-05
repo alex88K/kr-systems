@@ -30,7 +30,7 @@ var path = {
 		fonts: 'dist/fonts/',
 	},
 	src: {
-		html: 'app/**/*.html',
+		html: 'app/*.html',
 		js: 'app/js/scripts.min.js',	//only 'main' files
 		style: 'app/sass/main.sass',
 		img: 'app/img/**/*.*',
@@ -81,11 +81,13 @@ gulp.task('js:build', function() {
 		'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
 		'app/libs/fancybox/dist/jquery.fancybox.min.js',
 		'app/libs/maskedInput/maskedInput.min.js',
+		'app/libs/jQuery-mmenu/jquery.mmenu.all.js',
+		'app/libs/jQuery-mmenu/jquery.mmenu.bootstrap4.js',
 		'app/libs/slick/slick.js',
 		'app/js/common.js',
 		])
 	.pipe(concat('scripts.min.js'))
-	// .pipe(uglify()) // Минимизировать весь js (на выбор)
+	.pipe(uglify()) // Минимизировать весь js (на выбор)
 	.pipe(gulp.dest(path.build.js))
 	.pipe(reload({stream: true}));
 });
@@ -128,26 +130,19 @@ gulp.task('pic:build', function() {
 
 gulp.task('svg-sprite:build', function() {
 	return gulp.src('app/img/svg-icons/*.svg')
-		.pipe(cheerio({
-			run: function($) {
-				$('[fill]').removeAttr('fill');
-				$('[style]').removeAttr('style');
-			},
-			parserOptions: { xmlMode: false }
-		}))
 		.pipe(svgSprite({
 			mode: {
 				symbol: {
-					sprite: '../sprite.svg', 
-					render: {
-						scss: {
-							dest: '../../sass/_sprite.scss'
-						}
-					}
+					sprite: '../sprite.svg'
 				}
 			}
 		}))
 		.pipe(gulp.dest(path.build.img));
+});
+
+gulp.task('fonts:build', function() {
+	return gulp.src(path.src.fonts)
+		.pipe(gulp.dest(path.build.fonts))
 });
 
 gulp.task('build', [
@@ -155,6 +150,7 @@ gulp.task('build', [
 	'js:build',
 	'style:build',
 	'image:build',
+	'fonts:build',
 	'pic:build',
 	'svg-sprite:build'
 ]);
@@ -172,6 +168,9 @@ gulp.task('watch', function(){
 	});
 	watch([path.watch.img], function(event, cb) {
 		gulp.start('image:build');
+	});
+	watch([path.watch.fonts], function(event, cb) {
+		gulp.start('fonts:build');
 	});
 });
 

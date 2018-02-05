@@ -1,12 +1,12 @@
 {
-  "name": "StroimIzBrusa",
+  "name": "KR-systems",
   "version": "1.0.0",
-  "description": "Front-end for Stroim iz brusa",
+  "description": "Front-end for KR-systems",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign Master",
+  "author": "AK",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",

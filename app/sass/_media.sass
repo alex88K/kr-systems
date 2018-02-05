@@ -4,72 +4,178 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	.contact-b
-		padding-top: 35px
-		.contact-data
-			display: none
-		.contact-data:first-child,
-		.contact-data:last-child
-			display: block	
+	.top-line-b > .search
+			left: 135px
+		
+	.search-form
+		input[type="text"].active
+	  		width: 200px
+	  		height: 40px
+	  		padding: 10px 14px
+	  		margin-top: -10px
+	  		margin-left: 0
 
-	.card
-		.btn-group
-			flex-wrap: wrap
-			.btn
-				margin-bottom: .5em
-		.card-body
-			padding: 12px 20px 130px 20px
+	.promo
+		.slide-text
+			padding: 0 80px
+		.h1
+			font-size: 56px
+		.h2
+			font-size: 32px
+		.promo-logo
+			max-width: 250px
+			max-height: 120px
+			height: auto
 
-	.stages-list
-		div[class^=col-]:first-child
-			.stages-item:before
-				width: 20px
-		div[class^=col-]:last-child
-			.stages-item:after
-				width: 20px
-		.stages-item
-			&:after
-				right: -35px
-				width: 70px
-			.stages-icon:before
-				right: 35px
+	.category-b
+		&-title
+			font-size: 24px
+		&-img
+			height: 280px
 
-	.feedback
-		&-text
-			margin: 28px 0 20px 0
-		.contact-form
-			margin: 0
-			input
-				width: 100%
-			input[type="submit"]
-				padding: 15px
+	.aside
+		&-news
+			padding: 38px 25px 25px 25px
+		.news-title
+			margin-bottom: .8em
+			font-size: 20px
+		.news-text
+			margin-bottom: 6px
+			font-size: 18px
 
-	.partners
-		.slick-list
-			margin: 0
-		&-slide
-			margin: 0
-			img
-				max-width: 80%
+	.article
+		p
+			font-size: 18px
 
-	.product-slider
-		width: 280px
-		height: 270px
-		&-nav
-			margin-left: 10px
+	.login-wrap
+		padding: 35px 5% 70px 5%
 
-	.product-card-head
-		padding: 40px 40px 20px 40px
+	.registration-form
+		input
+			width: 255px
+
+	.article
+		&-card
+			margin-bottom: 30px
+		&-card-title
+			margin: .6em 0 .8em 0
+			font-size: 24px
+		&-card-desc
+			font-size: 16px
+
+	.category-list
+		.product-card
+			.product-title
+				font-size: 22px
+				line-height: 1.2
+			.product-img
+				height: auto
+				img
+					max-width: 100%
+
+	.product-photo-nav
+		margin-right: 80px
+
+	.product-photo
+		width: 300px
+		.slick-prev
+			left: -60px
+		.slick-next
+			right: -40px
+
+	.product-info
+		.product-title
+			margin-bottom: 25px
+			font-size: 26px
+		.btn-group .btn
+			margin-top: .5em
+			margin-bottom: .5em
+		.product-price
+			margin: 20px 0 30px 0
+			padding: 8px 20px
+		.price-sign
+			margin-right: 10px
+		.product-desc-title
+			margin-bottom: .6em
+		
+	.contacts-col
+		svg
+			width: 50px
+			height: 50px
+		&-title
+			font-size: 34px
+
+	.contacts-info .tel
+		span
+			font-size: 28px
+
+	.cart-guest-info
+		.info-list
+			.info-item
+				font-size: 16px
+
+	.navbar-nav .nav-item
+		padding: 0 12px
+	
+	.contact-b .call-i
+		margin-right: 12px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	.logo
-		margin-top: 16px
-		img
-			max-width: 210px
+	.main-header
+		& > .container
+			min-height: 100px
+
+	.top-line-b
+		margin-top: 15px
+		.contact-b
+			top: 15px
+			left: 16%
+			right: inherit
+			a
+				font-size: 16px
+			.call
+				top: 0
+
+	.compare-link
+		position: absolute
+		top: 59px
+		right: 95px
+
+	.signin a
+		font-size: 16px
+
+	.search-control label .search-sign
+		font-size: 16px
+
+	.top-line-b > .search
+			top: 62px
+			left: 16%
+		
+	.search-form
+		input[type="text"].active
+	  		width: 200px
+	  		height: 40px
+	  		line-height: 1
+
+	.cart
+		margin-left: 5%
+
+	.navbar-toggler
+		position: absolute
+		top: 50px
+		right: 15px
+
+	.logo-i
+		width: 55px
+		height: 80px
 
 	.navbar
-		position: static
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		padding: 0
 		&-nav
 			padding-top: 70px
 
@@ -132,159 +238,197 @@
 		background-color: transparent
 		columns: 1
 		text-align: center
-
-	.card
-		.card-body
-			padding: 12px 20px 100px 20px
-		.btn-group
-			justify-content: flex-start
-			.btn
-				margin-right: 1em
+	
+	.promo-slider,
+	.promo .promo-slide
+		height: 460px
 
 	.promo
-		.slide-text
-			padding-left: 0
+		.h1
+			font-size: 48px
+		.h2
+			font-size: 26px
+		.promo-logo
+			max-width: 150px
+			max-height: 80px
+			height: auto
 
-	.stages-list
-		div[class^=col-]:first-child
-			.stages-item:before
-				width: 10px
-				left: 5px
-		div[class^=col-]:last-child
-			.stages-item:after
-				width: 10px
-				right: 5px
-		.stages-item
+	.category-b
+		&-title
+			margin: .6em 0
+			font-size: 22px
+		&-img
+			height: 200px
+		&-footer a
+			font-size: 16px
+		a.category-details
+				display: none
+
+	.catalog
+		.btn-group
+			margin: 10px 0 30px 0
+
+	.carousel-b
+		.section-title
 			&:after
-				right: -15px
-				width: 30px
-			.stages-icon:before
-				right: 5px
+				width: 0
+		.slider-nav
+			top: -62px
 
-	.feedback
-		&-text
-			margin: 0px 0 20px 0
+	.related-items
+		.section-title
+			padding-right: 5%
 
-	.partners
-		.slick-list
-			margin: 0
-		&-slider,
-		&-slide
-			height: 100px
-		&-slide
-			max-width: 160px
-			margin: 0
-			line-height: 100px
-			img
-				max-width: 60%
-				max-height: 60px
+	.article h1,
+	.aside-title,
+	.section-title
+		font-size: 42px
 
-	.faq .section-content
-		padding-left: 0
+	.product-card
+		.product-title
+			font-size: 18px
 
-	.product-card-head
-		padding: 40px 13% 30px 13%
+	.product-photo-wrap
+		height: 580px
+		margin-bottom: 30px
+		padding: 30px
+		.product-photo
+			width: 60%
 
-	.product-slider
-		width: 70%
+	.product-card
+		.product-img
+			height: 240px
+			margin-bottom: 20px
 
-	.product-card-body
-		padding: 0 25px 20px 25px
+	.inner-header
+		padding: 2em 0
+
+	.inner-title
+		font-size: 52px
+
+	.registration-form
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		.form-group
+			flex-basis: 48%
+			margin: 0 0 25px 0
+			input
+				width: 100%
+
+	.login-form
+		input
+			width: 50%
+			margin: 0 10px 25px 10px
+
+	.breadcrumb + .inner-content
+		padding-top: 0
+
+	.features-list
+		column-count: 1
+		margin: 0 0 40px 0
+		li
+			margin: 0 0 15px 0
+	
+	.cart-order-form
+		textarea
+			margin-bottom: 0
+		.form-col
+			padding-right: 15px
+
+	.cart-item
+		padding: 25px 15px
+		&-header,
+		.product-art,
+		.product-title a
+			font-size: 16px
+		&-b
+			padding: 0 2%
+		.product-btn
+			.btn
+				min-width: 100px
+				padding: 9px 12px
+		.cart-count-input
+			width: 50px
+		.product-img
+			flex-basis: 30%
+
+	.f-nav
+		columns: 1
+		padding: 0 0 0 25px
+
+	.compare-table
+		tr:nth-child(even)
+			background-color: #eee
+		.product-card
+			.btn-group
+				margin: .5em 0
+				.btn
+					min-width: 100px
+					padding: 7px 15px
+			.product-img
+				height: 200px
+				img
+					max-width: 100%
+					width: auto
+					height: auto
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.promo
 		.promo-slider,
 		.promo-slide
-			height: 425px
+			height: 400px
 		
 @media only screen and (max-width : 767px)
 	.container
 		max-width: 100%
 
-	.catalog
-		.card-body
-			padding: 12px 0 90px 0
-		.card
-			max-width: 260px
-			.btn-group
-				justify-content: space-between
-				.btn
-					margin-right: 0
-		div[class^=col-]
-			&:nth-child(even) .card
-				margin: 0 auto 0 0
-			&:nth-child(odd) .card
-				margin: 0 0 0 auto
-
-	.advantages-list
-		margin: 40px 0 0 0
-		.advantages-item
-			margin-bottom: 30px
-
-	.contact-b 
-		padding-top: 15px
-		.contact-data
-			margin-right: 40px
-			&:last-child
-				margin-right: 0
-		.email
-			display: none
-		.soc
-			margin-top: 10px
-			margin-left: 0 !important
-		.soc-item + .soc-item
-			margin-left: 10px
-
-	.stages-list
-		margin-top: 15px
-		div[class^=col-]:first-child
-			.stages-item:before
-				width: 110px
-				left: -55px
-		div[class^=col-]:last-child
-			.stages-item:after
-				width: 110px
-				right: -55px
-		.stages-item-text
-			&:after
-				left: 170px
-		.stages-item
-			margin-bottom: 30px
-			&:after
-				right: -55px
-				width: 110px
-			.stages-icon:before
-				right: 24%
-		div[class^=col-]:nth-child(odd)
-			.stages-item:before
-			   content: ''
-			   position: absolute
-			   top: 65px
-			   left: -55px
-			   width: 110px
-			   height: 1px
-			   background-color: #e5e5e5
-
-	.feedback
-		.contact-form
-			max-width: 340px
-			padding: 22px 25px 10px 25px
-			.btn
-				font-size: 14px
-
 	.top-line
 		height: 75px
+	
+	.signin-link,
+	.cart a,
+	.top-line-b .contact-b a,
+	.search-control label .search-sign
+		font-size: 0
 
-	.logo
-		margin-top: 15px
-		margin-right: 0
-		img
-			max-width: 155px
+	.cart
+		.cart-full
+			top: -27px
+
+	.top-line-b .contact-b
+		left: 160px
+		right: inherit
+
+	.top-line-b > .search
+		left: 110px
+	
+	.search-form .search
+		transform: translate(0,5px) rotate(-45deg)	
+
+	.cart .cart-i,
+	.signin .men-i,
+	.call-i
+		width: 24px
+		height: 24px
+
+	.call-i
+		stroke-width: 15px
 
 	.promo
 		.h1
+			margin-bottom: .4em
 			font-size: 30px
+			line-height: 1.1
+		.h2
+			font-size: 26px
+		.h3
+			font-size: 18px
+		.promo-logo
+			max-height: 40px
+			margin: 0 0 1em 0 
 		ul
 			li
 				font-size: 12px
@@ -292,6 +436,9 @@
 					top: 7px
 				&:after
 					top: 3px
+
+	.order-sm-last
+		order: 2
 
 	.main-footer
 		.fleft,
@@ -310,180 +457,349 @@
 	.breadcrumb
 		margin-bottom: 10px
 
-	.product-card-body
-		padding: 0 25px 25px 25px
+	.article h1,
+	.section-title,
+	.aside-title
+		font-size: 38px
 
-	.product-slider
-		width: 70%
-		&-item
-			img
-				margin: 0
+	.category-b
+		margin-bottom: 30px
 
-	.product-card-head
-		padding: 40px 10% 30px 10%
+	.aside
+		margin-bottom: 50px
 
-@media only screen and (max-width : 576px)
-	.logo
-		width: 49px
-		height: 47px
-		background-image: url(../img/logo_xs.png)
-		background-repeat: no-repeat
-		background-size: cover
-		img
+	.article
+		p
+			font-size: 16px
+
+	.developer
+		text-align: left
+
+	.copyright-text,
+	.t-soc
+		margin-bottom: 20px
+
+	.main-footer
+		.tel
+			white-space: nowrap
+
+	input[type=email],
+	input[type=password],
+	input[type=tel],
+	input[type=text]
+		padding: 0 15px
+		font-size: 16px
+
+	.spec-products
+		.slider-nav
+			top: -68px
+		.section-title
+			margin-right: 130px
+			line-height: 1
+
+	.related-items
+		.slider-nav
+			top: -68px
+		.section-title
+			width: 60%
+			line-height: 1
+		.section-header:after
 			display: none
 
-	.catalog
-		.card-body
-			padding: 12px 0 90px 0
-		.card
-			max-width: 100%
-			.btn-group
-				justify-content: center
-				.btn
-					margin: 0 .5em
-			&-title
-				text-align: center
-			&-text
-				width: auto
-				margin: .5em auto
-			&-info
-				text-align: center
-		div[class^=col-]
-			&:nth-child(even) .card
-				margin: 0
-			&:nth-child(odd) .card
-				margin: 0
+	.row
+		.sm-order-2
+			order: 2
 
-	.advantages-list
-		.advantages-item
-			width: 50%
+	.inner-article
+		.article-col
+			margin-top: 0
 
-	.stages-list
-		&:nth-child(2n + 1)
-			.stages-item:before
-			   content: ''
-			   position: absolute
-			   top: 57px
-			   left: -30px
-			   width: 60px
-			   height: 1px
-			   background-color: #e5e5e5
-		div[class^=col-]:nth-child(odd)
-			.stages-item:before
-			   display: none
-		.col-sm-6
-			width: 50%
-		div[class^=col-]:first-child
-			.stages-item:before
-				display: none				
-		div[class^=col-]:last-child
-			.stages-item:after
-				display: none
-		.stages-item
-			&:after
-				display: none
-			.stages-icon:before
-				right: 30%
-			svg
-				width: 38px
-				height: 38px
-		.stages-icon
-			&:before
-				width: 20px
-				height: 20px
-				font-size: 12px
-				line-height: 20px
-			&:after
-				width: 82px
-				height: 82px
-				margin-top: -41px
-				margin-left: -41px
-		.stages-item-text
-			padding-top: 0
-
-	.feedback
-		&-text
-			display: none
-		.contact-form
-			max-width: 100%
-			width: 100%
-			padding: 22px 40px 10px 40px
-			.title
-				font-size: 22px
-			.btn
-				font-size: 14px
-
-	.contact-b 
-		padding-top: 22px
-		.contact-city
-			font-size: 9.75px
-		a
-			font-size: 11.4px
-			.call-i
-				top: 1px
-				left: -18px
-				width: 14px
-				height: 14px
-		.contact-data
-			margin-right: 15px
-			&:last-child
-				margin-right: 0
-		.email
-			display: none
-		.soc
-			margin-top: 2px
-			margin-left: 0 !important
-		.soc-item + .soc-item
-			margin-left: 4px
-
-	.product-card-head
-		padding: 2px 10px 30px 10px
-	
-	.product-card-body
-		padding: 0 10px 25px 10px
+	.category-list
+		.product-card
+			.product-title
+				font-size: 20px
+			.product-img
+				img
+					max-height: 200px
 
 	.product-card
-		.container
-			padding: 10px
+		margin-bottom: 15px
+		.product-title
+			font-size: 18px
+			font-weight: bold
+		.btn-compare
+			top: 0
+			left: 10px
+		&-head
+			padding-bottom: 40px
 
-	.product-slider
-		display: block
-		width: 300px
-		height: 240px
+	.product-info
+		.product-title
+			margin-bottom: 15px
+		.btn-group .btn
+			margin: .2em 0
+		.product-price
+			margin: 20px 0 25px 0
 
-	.product-slider-nav
-		display: block
+	.product-addit
+		padding: 40px 0
+
+	.category-b-title
+		margin: .6em 0 .4em 0
+		font-size: 20px
+
+	.product-photo-wrap
+		height: 410px
+		.product-photo
+			display: block
+			width: 100%
+			height: 290px
+			overflow: hidden
+
+	.product-photo-nav
+		z-index: 10
+		float: none
 		width: 300px
-		margin: 0
-		padding: 0 35px
-		text-align: center
+		height: 60px
+		margin-right: 0
+		margin-bottom: 20px
+		.slick-track
+			margin: auto 0 0 0 
+		.slick-slide
+			height: 60px
+			margin: 0 3px
 		&-item
-			max-width: 70px
-			height: 50px
+			height: 60px
+		button
+			width: 25px
 		.slick-arrow
 			top: 50%
+			margin-top: -12.5px
+		.slick-prev
 			left: 0
-			width: 20px
-			height: 20px
-			margin-top: -14px
+			transform: rotate(-90deg)
+		.slick-next
+			left: inherit
+			right: 5px
+			transform: rotate(-90deg)
+
+	.product-photo-item
+		img
+			max-width: 100%
+			width: auto
+
+	.modal
+		&-content
+			width: 100%
+			padding: 15px 5%
+
+	.cart-item
+		flex-wrap: wrap
+		&-b
+			margin-bottom: 10px
+			border: none
+		.product-img 
+			flex-basis: 20%
+			img
+				max-width: 70px
+				max-height: 70px
+		.product-art
+			flex-basis: 30%
+		.product-title
+			flex-basis: 50%
+		.product-btn
+			.btn
+				display: inline-block
+				margin: 30px .2em 0 .2em
+
+	.cart-guest-info
+		.info-list
+			.info-item
+				padding-left: 70px
+				&:before
+					top: 0
+					left: 15px
+
+	.cart-common-form
+		.form-bottom
+			padding-top: 25px
+		.chb-list
+			margin-top: 15px
+		.form-bottom
+			.form-group
+				.btn
+					margin-left: 0
+
+	.cart-order-status
+		margin: .5em 0 1em 0
+
+	.input-chb
+		margin: 12px auto
+		label
+			font-size: 16px
+
+	.order-modal
+		.modal-content
+			width: 100%
+	
+	.modal
+		&-body
+			p
+				font-size: 16px
+
+	.search-mob-btn
+		display: block
+
+	.search > .search-form
+		display: none
+
+	.compare-table
+		th,
+		td
+			padding: 10px
+		th
+			font-size: 16px
+		td
+			font-size: 14px
+			p
+				font-size: 14px
+		tr:nth-child(even)
+			background-color: #eee
+		tr td
+			&:first-child
+				font-size: 12px
+		.product-card
+			.product-title
+				font-size: 18px
+			.btn-group
+				margin: .5em 0
+				.btn
+					min-width: 100px
+					padding: 7px 15px
+			.product-img
+				height: 140px
+				img
+					width: 100%
+					height: auto
+
+	.order-history
+		display: block
+		overflow-x: auto
+	
+	.order-history 
+		td, th
+			padding: 6px 12px
+			font-size: 14px
+
+
+
+
+@media only screen and (max-width : 576px)
+	.cart
+		.cart-i
+			margin-right: 0
+
+	.promo
+		.slider-nav
+			display: none
+		.slide-text
 			padding: 0
-			.arrow-i
-				width: 12px
-				height: 12px
-			&.slick-prev
-				top: 50%
-				left: 20px
-				.arrow-i
-					margin-top: -1px
-					transform: rotate(90deg)
-			&.slick-next
-				bottom: 50%
-				left: 100%
-				margin-left: -24px
-				.arrow-i
-					margin-top: -1px
-					margin-left: 2px
-					transform: rotate(-90deg)
+
+	.f-nav
+		margin: 25px 0
+
+	.main-footer
+		.contact-b
+			text-align: left
+
+	.registration-form
+		.form-group
+			flex-basis: 100%
+
+	.login-form
+		input
+			width: 100%
+			margin: 0 0 25px 0
+
+	.lock-i
+		width: 40px
+		height: 50px
+
+	.login-section
+		.login-title
+			font-size: 26px
+
+	.inner-title
+		font-size: 34px
+
+	.inner-header
+		padding: 1.2em 0
+
+	.breadcrumb
+		padding: 20px 0
+		ul
+			li
+				font-size: 16px
+
+	.article
+		&-card
+			&-img img
+				width: 100%
+			&-title
+				margin: .5em 0
+			&-desc
+				margin-bottom: .6em
+
+	.p404-b
+		min-height: 520px
+		.sign404
+			top: 12px
+			font-size: 100px
+		p
+			padding-top: 30px
+
+	.cart-guest-info
+		.info-list
+			.info-item
+				&:first-child
+					margin-bottom: 45px
+
+	.cart-order-form 
+		.form-group
+			input[type=submit]
+				width: 100%
+
+	.f-nav
+		margin: 35px 0
+		padding: 0
+	
+	.contact-b
+		& > a
+			display: block
+
+	.soc a
+		margin-left: 0
+		margin-right: 12px
+
+	.main-footer
+		.contact-b
+			.tel
+				margin-bottom: .5em
+				font-size: 20px
+			a,
+			.email
+				font-size: 16px
+
+	.copyright-text,
+	.developer
+		font-size: 18px
+
+	.t-soc a
+		margin-left: 0
+		margin-right: 25px
+	
+	.copyright
+		margin-bottom: 60px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -518,130 +834,95 @@
 		max-width: 130px
 		margin-right: 5px
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	.container
-		padding-right: 10px
-		padding-left: 10px
+	.contacts-col
+		svg
+			width: 40px
+			height: 40px
+		&-title
+			font-size: 28px
 
-	.btn
-		padding: 10px 25px
-		font-weight: 400
-		font-size: 10.6px
+	.contacts
+		padding-top: 50px
+		&-i
+			padding-right: 20px
 
-	.promo
-		.promo-slider,
-		.promo-slide
-			height: 320px
-			.slide-wrap
-				padding: 25px 0 60px 0
-		ul li
-			margin-bottom: 10px
+	.contacts-col
+		margin-bottom: 35px
 
-	p,
-	.advantages .section-content p
-		font-size: 12px
-
-	.section-title,
-	.article h1
-		margin: 0 0 18px 0
-		font-size: 18px
-
-	.seo-box
+	.carousel-b
+		.section-header:after
+			display: none
 		.section-title
+			padding-right: 2%
+
+	.related-items
+		.section-title
+			font-size: 26px
+
+	.product-photo-wrap .product-photo
+		height: 270px
+
+	.product-photo-nav
+		margin-bottom: 20px
+
+	.product-info
+		.product-desc-title
+			font-size: 20px
+		.product-desc p
 			font-size: 16px
-	
-	.filter
-		margin: 18px 0
-	
-	.filter-item
-		padding: 6px 4px
-		font-size: 10.8px
-		&.active
-			padding: 6px 17px
+		.price-sign
+			font-size: 20px
 
-	.log-i
-		height: 25px
+	.features-list
+		li span
+			font-size: 16px
 
-	.advantages-list
-		.advantages-item
-			font-size: 9.4px
-			svg
-				margin: 0 auto 10px auto
+	.features-list-title
+		margin-bottom: 15px
 
-	.stages-list .stages-item
-		.stages-icon:before
-			right: 26%
+	.product-photo-nav
+		width: 230px
 
-	.stages-list
-		margin-top: 30px
-
-	.stages-item-text
-		font-size: 11.6px
-
-	.contact-form
-		.title
-			font-size: 18px
-
-	.partners
-		&-slider
-			height: 55px
-		&-slide
-			height: 55px
-			line-height: 55px
-			max-width: 65px
+	.cart-item
+		&-b
+			margin-bottom: 10px
+		.product-img 
+			flex-basis: 100%
 			img
-				max-width: 80%
-				max-height: 30px
-
-	.article
-		img
+				max-width: 100%
+				max-height: 140px
+		.product-art
+			flex-basis: 100%
+		.product-title
+			flex-basis: 100%
 			max-width: 100%
-			margin-right: 0 !important
-			margin-left: 0 !important
+		.product-count
+			max-width: 100%
+		.product-btn
+			width: 100%
+			.btn
+				display: inline-block
+				margin: .3em .2em
 
-	.contacts-where
+	textarea
+		padding: 20px 15px
 		font-size: 16px
 
-	.contacts-head
-		font-size: 14px
+	.search-mob-btn
+		font-size: 0
 
-	.faq-b
-		p
-			font-size: 10px
+	.profile-inner
+		.profile-b.profile-address
+			div[class^=col-]
+				span:first-child
+					width: 100px
+				span:last-child
+					max-width: 200px
 
-	.feedbacks-list
-		div[class^="col-"]
-			margin-bottom: 25px
-		.feedbacks-item
-			padding: 12px
-		.feedbacks-ava
-			width: 55px
-			height: 55px
-			border: 3px solid $dark-brown
-		.feedbacks-name
-			margin-bottom: 5px
-			font-size: 13.4px
-		.feedbacks-text
-			font-size: 10px
-		.feedbacks-content
-			margin-left: 70px
-
-	.read-more
-		font-size: 8.35px
-		svg
-			width: 6px
-			height: 6px
-
-	.product-slider
-		width: 100%
-		height: 210px
-
-	.article
-		&.product-card-body
-			p,
-			a
-				font-size: 9px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.modal .btn
+		padding: 10px 12px
 
 /*==========  Mobile First  ==========*/
 

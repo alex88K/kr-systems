@@ -1,1 +1,1 @@
-Front-end for StroimIzBrusa
+Front-end for KR-systems

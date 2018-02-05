@@ -1,0 +1,173 @@
+//= html_includes/_head.html
+
+<body>
+	<div class="wrapper">
+
+//= html_includes/_header.html
+
+		<main class="main inner-article">
+			<div class="inner-header">
+				<h1 class="inner-title container">Личный кабинет</h1>
+			</div>
+
+			<div class="breadcrumb">
+				<div class="container">
+					<ul>
+						<li><a href="/">Главная</a></li>
+						<li>Личный кабинет покупателя</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="profile-inner">
+				<div class="container">
+					<div class="inner-greeting">Здравствуйте <a href="signin.html">Иванов Игорь</a></div>
+
+					<div class="h3">Регистрационные данные пользователя</div>
+					<div class="profile-b">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<span>Логин</span>
+								<span>login123</span>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<span>Пароль</span>
+								<span>12345</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<span>Имя</span>
+								<span>Игорь</span>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<span>Фамилия</span>
+								<span>Иванов</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<span>E-mail</span>
+								<span>info@mail.ru</span>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<span>Контактный тел.</span>
+								<span>(901) 1234567</span>
+							</div>
+						</div>
+						<div class="sub-sign">* Логин изменить нельзя</div>
+						<a href="/" class="btn">Обновить</a>
+					</div>
+
+					<div class="h3">Регистрационные данные компании</div>
+					<div class="profile-b">
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<span>Компания</span>
+								<span>ООО «СпецТех»</span>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<span>ИНН</span>
+								<span>5001250012</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<span>КПП</span>
+								<span>500101001</span>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<span>ОКПО</span>
+								<span>12356666</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 col-md-6">
+								<span>Р/Счет</span>
+								<span>40702810700080000013</span>
+							</div>
+							<div class="col-lg-4 col-md-6">
+								<span>БИК</span>
+								<span>044525629</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="h3">Адреса</div>
+					<div class="profile-b profile-address">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">
+								<span>Ваш город</span>
+								<span>Новосибирск</span>
+							</div>
+							<div class="col-lg-12 col-md-12">
+								<span>Адрес офиса/почтовый</span>
+								<span>630047, Новосибирск г, Кузьмы Минина ул, дом № 9, квартира 100</span>
+							</div>
+							<div class="col-lg-12 col-md-12">
+								<span>Адрес доставки</span>
+								<span>630061, г. Новосибирск, ул Гребенщикова, д 14</span>
+							</div>
+						</div>
+						<a href="/" class="btn">Обновить</a>
+					</div>
+
+					<div class="h3">История и статус ваших запросов</div>
+					<div class="profile-b">
+						<table class="order-history">
+							<tr>
+								<th>Номер запроса</th>
+								<th>Дата запроса</th>
+								<th>Статус запроса</th>
+								<th>Действие</th>
+							</tr>
+							<tr>
+								<td>0000210</td>
+								<td>01.12.2017</td>
+								<td>Принят, в работе</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>0000210</td>
+								<td>01.12.2017</td>
+								<td>Выполнен, отправлен ответ</td>
+								<td><a href="#" class="order-del link">удалить *</a></td>
+							</tr>
+						</table>
+						<div class="sub-sign">* Удалить запросы можно только со статусом выполнен. Запросы по истечении 6 месяцев автоматически удаляются.</div>
+					</div>
+
+					<div class="add-config">
+						<div class="h3">Управление рассылкой новостей</div>
+						<div class="input-chb">
+							<input type="checkbox" name="subscribe" id="subscribe">
+							<label for="subscribe">Получать на эл почту новости от нас и наших партнеров</label>
+						</div>
+						<div class="input-chb">
+							<input type="checkbox" name="subscribe-spec" id="subscribeSpec">
+							<label for="subscribeSpec">Получать на эл почту новости от нас и наших партнеров</label>
+						</div>
+
+						<div class="h3">Запрос дополнительной информации и материалов<div class="sub">(только для постоянных покупателей)</div></div>
+
+						<div class="input-chb">
+							<input type="checkbox" name="pricelist" id="pricelist">
+							<label for="pricelist">Выслать актуальный прайс-лист</label>
+						</div>
+						<div class="input-chb">
+							<input type="checkbox" name="product-remains" id="productRemains">
+							<label for="productRemains">Выслать актуальные остатки продукции</label>
+						</div>
+						<div class="input-chb">
+							<input type="checkbox" name="pr-catalog" id="prCatalog">
+							<label for="prCatalog">Запрос на печатные каталоги</label>
+						</div>
+						<textarea name="order-comment" id="orderComment" placeholder="Примечание к запросу"></textarea>
+						<button type="submit" class="btn">Отправить запрос</button>
+					</div>
+				</div>
+			</div>
+
+		</main>
+
+//= html_includes/_footer.html

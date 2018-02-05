@@ -1,0 +1,152 @@
+//= html_includes/_head.html
+
+<body>
+	<div class="wrapper">
+
+//= html_includes/_header.html
+
+		<main class="main inner-article">
+			<div class="inner-header">
+				<h1 class="inner-title container">Сравнение товара</h1>
+			</div>
+
+			<div class="breadcrumb">
+				<div class="container">
+					<ul>
+						<li><a href="/">Главная</a></li>
+						<li>Сравнение товара</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="compare-list">
+				<div class="container">
+					<div class="compare-sign">Вы выбрали 2 товара для сравнения:</div>
+					<div class="table-responsive">
+						<table class="compare-table">
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<div class="product-card">
+										<a href="/" class="product-img">
+											<img src="pic/catalog/cable/product-1.jpg" alt="Фидерные кабели 50 Ом">
+										</a>
+										<a href="/" class="product-title">RFA 1/2"-50 Коаксиальный кабель</a>
+										<div class="btn-group">
+											<button type="button" class="btn">Удалить</button>
+											<button type="button" class="btn" data-target="#cart-modal" data-toggle="modal">Запрос</button>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="product-card">
+										<a href="/" class="product-img">
+											<img src="pic/catalog/cable/product-2.jpg" alt="Фидерные кабели 50 Ом">
+										</a>
+										<a href="/" class="product-title">FA 2"-50 кабель</a>
+										<div class="btn-group">
+											<button type="button" class="btn">Удалить</button>
+											<button type="button" class="btn" data-target="#cart-modal" data-toggle="modal">Запрос</button>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="3">Описание</th>
+							</tr>
+							<tr>	
+								<td>&nbsp;</td>
+								<td>
+									<div class="product-desc">
+										<p>Фидерный кабель размером 1/2 (по изоляции 12 мм, внешний размер 16 мм). Применение: антенно-фидерный тракт систем радиосвязи (в том числе базовые станции сотовой связи).</p>
+									</div>
+								</td>
+								<td>
+									<div class="product-desc">
+										<p>Кабель размером 1/2 (по изоляции 12 мм, внешний размер 16 мм). Применение: антенно-фидерный тракт систем радиосвязи (в том числе базовые станции сотовой связи).</p>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="3">Характеристики</th>
+							</tr>
+							<tr>
+								<td>Производитель:</td>
+								<td>Draka NK Cables</td>
+								<td>Draka NK Cables</td>
+							</tr>
+							<tr>
+								<td>Артикул:</td>
+								<td>RFA 1/2"-50</td>
+								<td>FA 2"-20</td>
+							</tr>
+							<tr>
+								<td>Кабельная группа:</td>
+								<td>1/2"R</td>
+								<td>1/2"R</td>
+							</tr>
+							<tr>
+								<td>Волновое сопротивление:</td>
+								<td>50 Ом</td>
+								<td>30 Ом</td>
+							</tr>
+							<tr>
+								<td>Внутренний проводник кабеля:</td>
+								<td>обмеднённая алюминиевая проволока</td>
+								<td>алюминиевая проволока</td>
+							</tr>
+							<tr>
+								<td>Внешний проводник кабеля:</td>
+								<td>гофрированная медная трубка</td>
+								<td>гофрированная медная трубка</td>
+							</tr>
+							<tr>
+								<td>Оболочка кабеля:</td>
+								<td>светостаби&shy;лизированная черная</td>
+								<td>черная</td>
+							</tr>
+							<tr>
+								<td>Макс. Рабочая частота, ГГц:</td>
+								<td>7,3</td>
+								<td>8,8</td>
+							</tr>
+							<tr>
+								<th colspan="3">Файлы документации</th>
+							</tr>
+							<tr>
+								<td>Спецификация:</td>
+								<td><a href="/" class="link">RFA 12-50.pdf</a></td>
+								<td><a href="/" class="link">FA 150.pdf</a></td>
+							</tr>
+							<tr>
+								<td>Инструкция:</td>
+								<td><a href="/" class="link">RFA 12-50.pdf</a></td>
+								<td><a href="/" class="link">FA 150.pdf</a></td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+
+		</main>
+
+<!-- Modal -->
+
+<div class="modal cart-modal fade" id="cart-modal" tabindex="-1" role="dialog" aria-labelledby="cart-modal" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title">Продукция добавлена в корзину запроса</h5>
+			</div>
+			<div class="modal-body">
+				<div class="btn-group">
+					<button type="button" class="btn" data-dismiss="modal" aria-label="Close">Продолжить выбор товара</button>
+					<a href="/cart.html" class="btn">Перейти в корзину</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+//= html_includes/_footer.html

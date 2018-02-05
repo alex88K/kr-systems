@@ -1,46 +1,62 @@
 <footer class="main-footer">
-	<div class="partners">
-		<div class="container">
-			<div class="partners-slider">
-				<div class="partners-slide">
-					<img src="img/partners/makita.png" alt="Makita one">
+	<div class="container clearfix">
+		<div class="f-bg"><svg class="signal-i"><use xlink:href="#signal"></use></svg></div>
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-2">
+				<a href="/" class="logo"><svg class="logo-i"><use xlink:href="#logo"></use></svg></a>
+			</div>
+			<div class="col-lg-4 offset-lg-2 col-md-5 offset-md-0 col-sm-4">
+				<div class="f-nav">
+					<a href="/">Продукция</a>
+					<a href="/">Компания</a>
+					<a href="/">Доставка и оплата</a>
+					<a href="/">Статьи</a>
+					<a href="/">Контакты</a>
 				</div>
-				<div class="partners-slide">
-					<img src="img/partners/partner-2.png">
+			</div>
+			<div class="col-lg-4 col-md-5 col-sm-6">
+				<div class="contact-b">
+					<a href="tel:84957289099" class="tel"><svg class="call-i"><use xlink:href="#call"></use></svg>8 (495) 728-90-99</a>
+					<a href="tel:84956642842" class="tel"><svg class="call-i"><use xlink:href="#call"></use></svg>8 (495) 664-28-42</a>
+					<a href="mailto:info@krsystems.ru" class="email">info@krsystems.ru</a>
+					<div class="soc">
+						<a href="/" class="vk"><svg class="soc-i vk-i"><use xlink:href="#vk"></use></svg></a>
+						<a href="/" class="instagram"><svg class="soc-i instagram-i"><use xlink:href="#instagram"></use></svg></a>
+						<a href="/" class="fb"><svg class="soc-i fb-i"><use xlink:href="#fb"></use></svg></a>
+					</div>
+					<div class="t-soc">
+						<a href="/" class="viber"><svg class="t-soc-i"><use xlink:href="#viber"></use></svg></a>
+						<a href="/" class="telegram"><svg class="t-soc-i"><use xlink:href="#telegram"></use></svg></a>
+						<a href="/" class="whatsapp"><svg class="t-soc-i"><use xlink:href="#whatsapp"></use></svg></a>
+					</div>
 				</div>
-				<div class="partners-slide">
-					<img src="img/partners/onduline.png" alt="Onduline">
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<div class="copyright-text">2017 © ООО "КР Системы"<br>
+					Все права защищены</div>
 				</div>
-				<div class="partners-slide">
-					<img src="img/partners/isover.png" alt="Isover">
-				</div>	
-				<div class="partners-slide">
-					<img src="img/partners/gl.png" alt="Grand Line">
-				</div>	
+				<div class="col-lg-4 col-md-4">
+					
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="developer">Сайт разработан в студии <a href="brandstore.ru">Brandstore</a></div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="copyright-section">
-		<div class="container">
-			<div class="copyright fleft"><span>Все права защищены &copy;</span><a href="www.stroimizbrusa.ru">www.stroimizbrusa.ru</a></div>
-			<div class="fright developer">Сделано в студии <a href="/">Webkitt</a></div>
-		</div>
-	</div>
-
 </footer>
 
 </div>
 
 <!-- Modals -->
 
-<!-- Modal -->
-
 <div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="success-modal" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true"><svg class="close-i"><use xlink:href="#close"></use></svg></span>
-			</button>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			<div class="modal-header">
 				<h5 class="modal-title" id="success-modal-title">Сообщение отправлено</h5>
 				<p class="modal-subtitle">Мы скоро с вами свяжемся</p>
@@ -49,39 +65,70 @@
 	</div>
 </div>
 
-<div class="modal fade" id="callback-modal" tabindex="-1" role="dialog" aria-labelledby="callback-modal" aria-hidden="true">
+<div class="modal personal-modal fade" id="personal-modal" tabindex="-1" role="dialog" aria-labelledby="personal-modal" aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
-			<button type="button" class="close-btn close-btn__light" data-dismiss="modal">&nbsp;</button>
 			<div class="modal-header">
-				<h5 class="modal-title" id="callback-modal-title">Заказать звонок</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="modal-title">Личный кабинет</div>
 			</div>
 			<div class="modal-body">
-				<form action="#" class="contact-form">
-					<div class="form-group">
-						<label>Представьтесь пожалуйста</label>
-						<input type="text" name="name">
+				<div class="personal-data">
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-6">Имя:</div>
+						<div class="col-lg-8 col-md-8 col-sm-6">Алексей</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">Фамилия:</div>
+						<div class="col-lg-8 col-md-8 col-sm-6">Константинопольский</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">Компания:</div>
+						<div class="col-lg-8 col-md-8 col-sm-6">ОАО Техинкорпорейтед</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">E-mail:</div>
+						<div class="col-lg-8 col-md-8 col-sm-6">some@gmail.com</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">Контактный телефон:</div>
+						<div class="col-lg-8 col-md-8 col-sm-6">+7 490 344 34 43</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">Мобильный:</div>
+						<div class="col-lg-8 col-md-8 col-sm-6">+7 490 344 34 43</div>
 					</div>
-					<div class="form-group">
-						<label>Введите ваш номер</label>
-						<input type="tel" name="phone" required>
+					<div class="btn-group">
+						<a href="/" class="link">Изменить пароль</a>
+						<a href="/" class="link">Редактировать личные данные</a>
+						<a href="/">Выход</a>
 					</div>
-					<div class="form-group">
-						<label>Введите ваш e-mail</label>
-						<input type="email" name="email">
-					</div>
-					<div class="form-group">
-						<label>Введите ваше сообщение</label>
-						<textarea name="message">Сообщение</textarea>
-					</div>
-					<div class="form-group">
-						<button type="submit" class="btn btn-submit">Отправить <svg class="send-mail"><use xlink:href="#send-mail"></use></svg></button>
-					</div>
-				</form>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<div class="modal login-modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="login-section">
+					<div class="login-wrap">
+						<a href="/" class="registration-link link">Регистрация</a>
+						<div class="login-title">Авторизация для покупателей</div>
+						<svg class="login-i lock-i"><use xlink:href="#lock"></use></svg>
+						<div class="login-subtitle">Для <b>зарегистрированных</b><br>покупателей</div>
+						<form action="#" class="login-form">
+							<div class="form-group">
+								<input type="email" name="email" placeholder="E-mail">
+								<input type="password" name="password" placeholder="Пароль">
+								<input type="submit" class="btn btn-input" value="Войти">
+							</div>
+						</form>
+						<a href="/" class="remind-link">Напомнить пароль</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <link rel="stylesheet" href="css/main.min.css">
 <script src="js/scripts.min.js"></script>
