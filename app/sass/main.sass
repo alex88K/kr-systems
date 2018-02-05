@@ -526,6 +526,10 @@ article.content
 	a
 		font-size: 18px
 		color: #383737
+		&:hover
+			color: $dark_blue
+			b
+				color: $dark_blue
 
 // Search
 
@@ -584,6 +588,14 @@ article.content
 			font-family: $font
 		
 .search-form
+	&:hover
+		input
+			border-color: $dark_blue
+		.search-sign
+			color: $dark_blue
+		.search
+			background-color: $dark_blue
+
 	input[type=text].active
   		width: 200px
   		height: 40px
@@ -731,6 +743,25 @@ article.content
 		font-size: 14px
 		line-height: 20px
 		color: #fff 
+
+.cart a,
+.compare-link a,
+.signin-link
+	&:hover
+		color: $dark_blue
+
+.signin-link:hover .men-i
+	fill: $dark_blue
+	stroke: $dark_blue
+
+.compare-link a:hover span
+		background-color: $dark_blue
+
+.cart a:hover 
+	.cart-i
+		fill: $dark_blue
+	.cart-full
+		background-color: $dark_blue
 
 .top-line-b
 	width: 80%
